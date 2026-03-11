@@ -1,0 +1,51 @@
+/* src/components/TechStack.css */
+.ts-section {
+  padding: 100px 0;
+  background: var(--bg-dark);
+  display: flex;
+  justify-content: center;
+}
+
+.ts-container {
+  width: 90%;
+  max-width: 1000px;
+  text-align: center;
+}
+
+.ts-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 50px;
+  color: #fff;
+}
+
+/* This is the Grid Fix you needed */
+.ts-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 Columns */
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .ts-grid { grid-template-columns: repeat(2, 1fr); } /* 2 Columns on mobile */
+}
+
+.ts-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.ts-card:hover {
+  border-color: var(--accent-blue);
+  transform: translateY(-5px);
+  background: rgba(0, 210, 255, 0.05);
+}
+
+.ts-icon { font-size: 2.5rem; margin-bottom: 10px; }
+.ts-name { color: var(--text-dim); font-weight: 600; }
