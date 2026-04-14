@@ -1,16 +1,108 @@
-# React + Vite
+# React + Vite Starter
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a minimal setup for building a React application using Vite with Hot Module Replacement (HMR) and basic ESLint configuration.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Getting Started
 
-## React Compiler
+Follow these steps to run the project locally:
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+### 1. Install Dependencies
 
-## Expanding the ESLint configuration
+Make sure you have Node.js installed, then run:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+npm install
+```
+
+### 2. Start Development Server
+
+```bash
+npm run dev
+```
+
+The app will be available at:
+
+```
+http://localhost:5173/
+```
+
+---
+
+## 📦 Available Scripts
+
+* `npm run dev`
+  Starts the development server with HMR.
+
+* `npm run build`
+  Builds the app for production.
+
+* `npm run preview`
+  Previews the production build locally.
+
+* `npm run lint`
+  Runs ESLint to check code quality.
+
+---
+
+## ⚙️ Project Setup
+
+This project uses:
+
+* React for building UI
+* Vite for fast development and build tooling
+* ESLint for linting and code quality
+
+---
+
+## 🔌 Plugins Used
+
+* **@vitejs/plugin-react**
+  Uses Babel for Fast Refresh
+
+**OR**
+
+* **@vitejs/plugin-react-swc**
+  Uses SWC for Fast Refresh (faster alternative)
+
+> Note: React Compiler is currently not compatible with SWC.
+
+---
+
+## 📁 Project Structure
+
+```
+project-root/
+│── public/
+│── src/
+│   ├── assets/
+│   ├── App.jsx
+│   ├── main.jsx
+│── index.html
+│── package.json
+│── vite.config.js
+```
+
+---
+
+## 🛠️ Recommended Improvements
+
+For production applications:
+
+* Use TypeScript
+* Enable type-aware linting with typescript-eslint
+* Add testing (e.g., Jest or Vitest)
+
+---
+
+## 📚 Learn More
+
+* https://vitejs.dev/
+* https://react.dev/
+
+---
+
+## 📄 License
+
+This project is open source and available under the MIT License.
